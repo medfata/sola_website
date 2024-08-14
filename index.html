@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -7,57 +8,66 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-100 h-auto">
     <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto  sm:my-6
     absolute z-[100] left-1/2 top-11 transform -translate-x-1/2 -translate-y-1/2">
-     
-            <div class="flex items-center">
-                <img src="/home/medfata/Desktop/makarem_web_site/assets/logo.png" alt="Makarem Logo" class="h-10">
+
+        <div class="flex items-center">
+            <img src="/home/medfata/Desktop/makarem_web_site/assets/logo.png" alt="Makarem Logo" class="h-10">
+        </div>
+        <nav class="hidden lg:flex space-x-8">
+            <div class="relative group">
+                <button
+                    class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                    NOS PRODUITS
+                    <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
+                    <!-- Add dropdown items here -->
+                </div>
             </div>
-            <nav class="hidden lg:flex space-x-8">
-                <div class="relative group">
-                    <button class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                        NOS PRODUITS
-                        <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
-                        <!-- Add dropdown items here -->
-                    </div>
+            <div class="relative group">
+                <button
+                    class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                    NOS ENGAGEMENTS
+                    <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
+                    <!-- Add dropdown items here -->
                 </div>
-                <div class="relative group">
-                    <button class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                        NOS ENGAGEMENTS
-                        <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
-                        <!-- Add dropdown items here -->
-                    </div>
-                </div>
-                <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                    NOS CERTIFICATS
-                </a>
-                <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                    NOS SAVOIR FAIRE
-                </a>
-                <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                    CONTACT
-                </a>
-            </nav>
-            <button class="block lg:hidden text-green-700 focus:outline-none" id="menu-button">
-                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
+            </div>
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS CERTIFICATS
+            </a>
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS SAVOIR FAIRE
+            </a>
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                CONTACT
+            </a>
+        </nav>
+        <button class="block lg:hidden text-green-700 focus:outline-none" id="menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
 
     </header>
     <section class="w-full  bg-cover bg-no-repeat bg-center"
-     style="background-image: url('/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg'); height: 55rem;">
+        style="background-image: url('/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg'); height: 55rem;">
         <div class="absolute text-white" style="width: 50rem;top: 30%; left: 15%;">
             <h1 class="font-black text-5xl">PRODUCTEUR DE TOMATES FRAICHE ET BIO</h1>
             <h3 class="text-3xl mt-8 mb-8 font-normal">Société engagé et responsable</h3>
@@ -72,31 +82,41 @@
                     <h1 class="text-3xl font-bold mb-4">ACTUELLEMENT NOUS PRODUISONS</h1>
                 </div>
                 <div style="width: 40rem;">
-                    <p class="text-gray-500 mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                    <p class="text-gray-500 mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
                     <button class="font-bold  bg-green-700 text-white py-2 px-6 rounded mt-4">EN SAVOIR PLUS</button>
                 </div>
             </div>
             <div class="flex justify-center gap-20">
                 <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
-                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image" class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
                     <h2 class="text-xl font-bold mb-2">TOMATE</h2>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
                 </div>
-                
+
                 <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
-                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image" class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
                     <h2 class="text-xl font-bold mb-2">TOMATE ALLONGÉE</h2>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
                 </div>
                 <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
-                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image" class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
                     <h2 class="text-xl font-bold mb-2">POIVRON ROUGE & VERT</h2>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
                 </div>
                 <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
-                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image" class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
                     <h2 class="text-xl font-bold mb-2">PIMENT</h2>
-                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
                 </div>
             </div>
         </div>
@@ -106,73 +126,94 @@
             <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
                 <circle cy="50" fill="white" cx="100" r="13"></circle>
                 <rect height="200" fill="white" width="5" y="60" x="98"></rect>
-            </svg>  
-            <h1 class="font-black text-4xl text-white mt-8" style="height: min-content;">NOS  VALEURS</h1>
+            </svg>
+            <h1 class="font-black text-4xl text-white mt-8" style="height: min-content;">NOS VALEURS</h1>
         </div>
         <div class="flex justify-evenly items-center text-white p-6 pt-2 rounded-lg max-w-2xl">
-            <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z" clip-rule="evenodd"/>
+            <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z"
+                    clip-rule="evenodd" />
             </svg>
             <div class="ml-4">
                 <h2 class="text-xl font-bold">L'INNOVATION</h2>
-                <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
             </div>
         </div>
         <div class="flex justify-end items-center text-white p-6 pt-2 rounded-lg" style="width: 61rem;">
             <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
                 <rect height="100" fill="white" width="5" x="40" y="5"></rect>
             </svg>
-           <div class="flex justify-evenly items-center max-w-2xl">
-                <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z" clip-rule="evenodd"/>
+            <div class="flex justify-evenly items-center max-w-2xl">
+                <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z"
+                        clip-rule="evenodd" />
                 </svg>
                 <div class="ml-4">
                     <h2 class="text-xl font-bold">L'INNOVATION</h2>
-                    <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
                 </div>
-           </div>
+            </div>
         </div>
         <div class="flex justify-start items-center text-white p-6 pt-2 rounded-lg" style="width: 61rem;">
-           <div class="flex justify-evenly items-center max-w-2xl">
-                <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z" clip-rule="evenodd"/>
+            <div class="flex justify-evenly items-center max-w-2xl">
+                <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z"
+                        clip-rule="evenodd" />
                 </svg>
                 <div class="ml-4">
                     <h2 class="text-xl font-bold">L'INNOVATION</h2>
-                    <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
                 </div>
-           </div>
-           <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-            <rect height="100" fill="white" width="5" x="40" y="5"></rect>
-        </svg>
+            </div>
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <rect height="100" fill="white" width="5" x="40" y="5"></rect>
+            </svg>
         </div>
         <div class="flex justify-end items-center text-white p-6 pt-2 rounded-lg" style="width: 61rem;">
             <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
                 <rect height="100" fill="white" width="5" x="40" y="5"></rect>
             </svg>
-           <div class="flex justify-evenly items-center max-w-2xl">
-                <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z" clip-rule="evenodd"/>
+            <div class="flex justify-evenly items-center max-w-2xl">
+                <svg class="w-16 h-16 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10 2a6 6 0 00-6 6 5.987 5.987 0 004.066 5.661c.178.048.34.136.484.25a2.997 2.997 0 00-.55 1.415 1 1 0 001 1h4a1 1 0 001-1 2.997 2.997 0 00-.55-1.415c.144-.114.306-.202.484-.25A5.987 5.987 0 0016 8a6 6 0 00-6-6zm-2.25 14.5a.75.75 0 00-1.5 0 .75.75 0 001.5 0zm5.5 0a.75.75 0 00-1.5 0 .75.75 0 001.5 0z"
+                        clip-rule="evenodd" />
                 </svg>
                 <div class="ml-4">
                     <h2 class="text-xl font-bold">L'INNOVATION</h2>
-                    <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p class="mt-2" style="width: 30rem;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
                 </div>
-           </div>
+            </div>
         </div>
     </section>
     <section class="bg-white">
         <div class="flex items-center justify-center min-h-screen bg-gray-100 p-8">
             <div class="relative">
-                <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png" style="--tw-translate-x:2rem" 
-                alt="Farmers" class="relative rounded-lg z-10 transform translate-y-4 ">
-                <div class="absolute inset-0 rounded-lg border-4 border-green-700 " style="height: 30rem;width: 22rem;"></div>
+                <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png" style="--tw-translate-x:2rem"
+                    alt="Farmers" class="relative rounded-lg z-10 transform translate-y-4 ">
+                <div class="absolute inset-0 rounded-lg border-4 border-green-700 " style="height: 30rem;width: 22rem;">
+                </div>
             </div>
             <div class="p-8" style="margin-left: 3rem;max-width: 35rem;">
                 <div class="">
                     <h2 class="text-green-700 text-xl font-bold uppercase">Ce que nous produisons</h2>
                     <h1 class="text-4xl font-bold mt-2">Cultiver un avenir plus fort</h1>
-                    <p class="text-gray-500 mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
+                    <p class="text-gray-500 mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod</p>
                 </div>
                 <div class="flex justify-center mt-8 space-x-10">
                     <div>
@@ -189,7 +230,7 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
     <!-- Mobile Menu -->
@@ -207,40 +248,67 @@
             <div class="w-1/4">
                 <img src="/home/medfata/Desktop/makarem_web_site/assets/logo.png" alt="Makarem Logo" class="h-10">
                 <p class="mt-8 text-sm">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
                 </p>
-                <div class="flex mt-4 space-x-4">
-                    <a href="#"><img src="/home/medfata/Desktop/makarem_web_site/assets/facebook.svg" alt="Facebook" class="w-4 h-4"></a>
-                    <a href="#"><img src="path-to-linkedin-icon.png" alt="LinkedIn" class="w-6 h-6"></a>
-                    <a href="#"><img src="path-to-youtube-icon.png" alt="YouTube" class="w-6 h-6"></a>
-                    <a href="#"><img src="path-to-instagram-icon.png" alt="Instagram" class="w-6 h-6"></a>
+                <div class="flex mt-8 space-x-4">
+                    <a href="#"><img src="/home/medfata/Desktop/makarem_web_site/assets/facebook-icon.svg"
+                            alt="Facebook" class="w-4 h-4"></a>
+                    <a href="#"><img src="/home/medfata/Desktop/makarem_web_site/assets/instagram-icon.svg"
+                            alt="Instagram" class="w-4 h-4"></a>
+                    <a href="#"><img src="/home/medfata/Desktop/makarem_web_site/assets/youtube-icon.svg" alt="Youtube"
+                            class="w-4 h-4"></a>
+                    <a href="#"><img src="/home/medfata/Desktop/makarem_web_site/assets/linkdin-icon.svg" alt="Linkdin"
+                            class="w-4 h-4"></a>
                 </div>
             </div>
             <div class="w-1/4">
                 <h2 class="text-lg font-bold">Nos Produits</h2>
                 <ul class="mt-8 text-sm">
-                    <li class="flex items-center"><span class="text-yellow-500 mr-2">•</span>Tomate</li>
-                    <li class="flex items-center mt-2"><span class="text-yellow-500 mr-2">•</span>Tomate allongée</li>
-                    <li class="flex items-center mt-2"><span class="text-yellow-500 mr-2">•</span>Poivron rouge & vert</li>
-                    <li class="flex items-center mt-2"><span class="text-yellow-500 mr-2">•</span>Piment</li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                    </li>
+                    <li class="flex items-center "><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                        allongée</li>
+                    <li class="flex items-center "><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Poivron
+                        rouge & vert</li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Piment
+                    </li>
                 </ul>
             </div>
             <div class="w-1/4">
                 <h2 class="text-lg font-bold">Contact</h2>
                 <ul class="mt-8 text-sm">
-                    <li class="flex items-center"><span class="mr-2">📞</span>+212 606 06 06 06</li>
-                    <li class="flex items-center mt-2"><span class="mr-2">✉️</span>Contact@makarem.com</li>
-                    <li class="flex items-center mt-2"><span class="mr-2">📍</span>Garage N 2 SIS A DOUAR TADDART COMMUNE SIDI BIBI BIOUGRA</li>
+                    <li class="flex items-center">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/home/medfata/Desktop/makarem_web_site/assets/phone-icon.svg" alt="phone"
+                                class="w-4 h-4">
+                        </span>+212 606 06 06 06
+                    </li>
+                    <li class="flex items-center mt-2">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/home/medfata/Desktop/makarem_web_site/assets/email-icon.svg" alt="email"
+                                class="w-4 h-4">
+                        </span>Contact@makarem.com
+                    </li>
+                    <li class="flex items-center mt-2">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/home/medfata/Desktop/makarem_web_site/assets/location-icon.svg" alt="location"
+                                class="w-4 h-4">
+                        </span>Garage N 2 SIS A DOUAR TADDART COMMUNE SIDI BIBI BIOUGRA
+                    </li>
                 </ul>
             </div>
-            <div class="w-1/4">
-                <img src="path-to-map-image.png" alt="Map" class="rounded-lg shadow-lg">
+            <div class="w-1/3">
+                <div class="map-container border-2 border-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <<div id="map" class="w-full h-full"></div>
+            </div>
             </div>
         </div>
         <div class="container mx-auto px-4 mt-8 border-t border-white pt-4 text-center">
             <p class="text-sm">Copyright. Makarem 2024</p>
         </div>
     </footer>
+    <script src="/home/medfata/Desktop/makarem_web_site/OpenLayers.js"></script>
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -248,6 +316,57 @@
         menuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+        var map = new OpenLayers.Map("map");
+        map.addLayer(new OpenLayers.Layer.OSM());
+
+        // Example point data
+        var points = [
+            {lon: 9.5788, lat: 48.9773, description: "Point 1"},
+            {lon: 9.5888, lat: 48.9873, description: "Point 2"}
+        ];
+
+        // Function to add points to the map
+        function addPoints(points) {
+            var vectorLayer = new OpenLayers.Layer.Vector("Points");
+            var epsg4326 = new OpenLayers.Projection("EPSG:4326"); // WGS 1984
+            var projectTo = map.getProjectionObject(); // The map projection (Spherical Mercator)
+
+            points.forEach(function(point) {
+                var feature = new OpenLayers.Feature.Vector(
+                    new OpenLayers.Geometry.Point(point.lon, point.lat).transform(epsg4326, projectTo),
+                    {description: point.description},
+                    {externalGraphic: 'https://openlayers.org/en/v3.20.1/examples/data/icon.png', graphicHeight: 25, graphicWidth: 21, graphicXOffset: -12, graphicYOffset: -25}
+                );
+                vectorLayer.addFeatures(feature);
+            });
+
+            map.addLayer(vectorLayer);
+
+            // Add a select feature control
+            var selectControl = new OpenLayers.Control.SelectFeature(vectorLayer, {
+                onSelect: function(feature) {
+                    alert(feature.attributes.description);
+                }
+            });
+            map.addControl(selectControl);
+            selectControl.activate();
+        }
+
+        addPoints(points);
+
+        // Create layer switcher widget in top right corner of map
+        var layerSwitcher = new OpenLayers.Control.LayerSwitcher({});
+        map.addControl(layerSwitcher);
+
+        // Set start center point and zoom    
+        var lonLat = new OpenLayers.LonLat(9.5788, 48.9773)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                map.getProjectionObject() // to Spherical Mercator Projection
+            );
+        var zoom = 11;
+        map.setCenter(lonLat, zoom);
     </script>
 </body>
+
 </html>
