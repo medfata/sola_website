@@ -7,6 +7,7 @@
     <title>Makarem</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-gray-100 h-auto">
@@ -66,9 +67,18 @@
         </button>
 
     </header>
-    <section class="w-full  bg-cover bg-no-repeat bg-center"
+    <div class="hidden lg:hidden" id="mobile-menu">
+        <nav class="bg-white shadow-lg">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS PRODUITS</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS SAVOIR FAIRE</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
+        </nav>
+    </div>
+    <section id="section-a" class="w-full  bg-cover bg-no-repeat bg-center"
         style="background-image: url('/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg'); height: 55rem;">
-        <div class="absolute text-white" style="width: 50rem;top: 30%; left: 15%;">
+        <div  class="absolute text-white" style="width: 50rem;top: 30%; left: 15%;">
             <h1 class="font-black text-5xl">PRODUCTEUR DE TOMATES FRAICHE ET BIO</h1>
             <h3 class="text-3xl mt-8 mb-8 font-normal">Société engagé et responsable</h3>
             <button class="font-bold  bg-green-700 text-white py-2 px-6 rounded">EN SAVOIR PLUS</button>
@@ -76,7 +86,7 @@
     </section>
     <section class="bg-white">
         <div class="container mx-auto max-w-screen-xl" style="padding-top: 5rem; padding-bottom: 5rem;">
-            <div class="flex justify-between py-10 mb-8">
+            <div id="section-b-first-dev" class="flex justify-between py-10 mb-8">
                 <div>
                     <h3 class="text-green-700 font-semibold mb-4 text-2xl">CE QUE NOUS PRODUISONS</h3>
                     <h1 class="text-3xl font-bold mb-4">ACTUELLEMENT NOUS PRODUISONS</h1>
@@ -88,7 +98,7 @@
                     <button class="font-bold  bg-green-700 text-white py-2 px-6 rounded mt-4">EN SAVOIR PLUS</button>
                 </div>
             </div>
-            <div class="flex justify-center gap-20">
+            <div id="section-b-second-dev" class="flex justify-center gap-20">
                 <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
                     <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
                         class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
@@ -202,13 +212,13 @@
     </section>
     <section class="bg-white">
         <div class="flex items-center justify-center min-h-screen bg-gray-100 p-8">
-            <div class="relative">
+            <div id="section-d-image" class="relative">
                 <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png" style="--tw-translate-x:2rem"
                     alt="Farmers" class="relative rounded-lg z-10 transform translate-y-4 ">
                 <div class="absolute inset-0 rounded-lg border-4 border-green-700 " style="height: 30rem;width: 22rem;">
                 </div>
             </div>
-            <div class="p-8" style="margin-left: 3rem;max-width: 35rem;">
+            <div id="section-d-info" class="p-8" style="margin-left: 3rem;max-width: 35rem;">
                 <div class="">
                     <h2 class="text-green-700 text-xl font-bold uppercase">Ce que nous produisons</h2>
                     <h1 class="text-4xl font-bold mt-2">Cultiver un avenir plus fort</h1>
@@ -232,18 +242,7 @@
         </div>
 
     </section>
-
-    <!-- Mobile Menu -->
-    <div class="hidden lg:hidden" id="mobile-menu">
-        <nav class="bg-white shadow-lg">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS PRODUITS</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS SAVOIR FAIRE</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
-        </nav>
-    </div>
-    <footer class="bg-green-800 text-white py-8" style="padding-top: 4rem;">
+    <footer class="bg-green-800 text-white py-8 mt-8" style="padding-top: 4rem;">
         <div class="container mx-auto px-4 flex justify-between items-start space-x-8">
             <div class="w-1/4">
                 <img src="/home/medfata/Desktop/makarem_web_site/assets/logo.png" alt="Makarem Logo" class="h-10">
