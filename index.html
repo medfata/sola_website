@@ -11,15 +11,15 @@
 </head>
 
 <body class="bg-gray-100 h-auto">
-    <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto  sm:my-6
-    absolute z-[100] left-1/2 top-11 transform -translate-x-1/2 -translate-y-1/2">
+    <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto
+    absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2" style="margin-top: 4rem;">
 
         <div class="flex items-center">
             <img src="/home/medfata/Desktop/makarem_web_site/assets/logo.png" alt="Makarem Logo" class="h-10">
         </div>
         <nav class="hidden lg:flex space-x-8">
             <div class="relative group">
-                <button
+                <button id="nos-produit-button"
                     class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
                     NOS PRODUITS
                     <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -27,9 +27,28 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </button>
-                <!-- Dropdown menu -->
-                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
-                    <!-- Add dropdown items here -->
+                <div id="nos-produit-menu" class="hidden absolute bg-white z-20 flex" style="top: 3.71rem;">
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">TOMATE</h2>
+                    </div>
+
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">TOMATE ALLONGÉE</h2>
+                    </div>
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">POIVRON ROUGE & VERT</h2>
+                    </div>
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Circular Image"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">PIMENT</h2>
+                    </div>
                 </div>
             </div>
             <div class="relative group">
@@ -78,7 +97,7 @@
     </div>
     <section id="section-a" class="w-full  bg-cover bg-no-repeat bg-center"
         style="background-image: url('/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg'); height: 55rem;">
-        <div  class="absolute text-white" style="width: 50rem;top: 30%; left: 15%;">
+        <div class="absolute text-white" style="width: 50rem;top: 40%; left: 10.6%;">
             <h1 class="font-black text-5xl">PRODUCTEUR DE TOMATES FRAICHE ET BIO</h1>
             <h3 class="text-3xl mt-8 mb-8 font-normal">Société engagé et responsable</h3>
             <button class="font-bold  bg-green-700 text-white py-2 px-6 rounded">EN SAVOIR PLUS</button>
@@ -131,7 +150,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-green-700 flex flex-col items-center">
+    <section id="section-c" class="bg-green-700 flex flex-col items-center">
         <div class="flex justify-evenly items-center" style="width: 40rem;">
             <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
                 <circle cy="50" fill="white" cx="100" r="13"></circle>
@@ -213,9 +232,10 @@
     <section class="bg-white">
         <div class="flex items-center justify-center min-h-screen bg-gray-100 p-8">
             <div id="section-d-image" class="relative">
-                <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png" style="--tw-translate-x:2rem"
-                    alt="Farmers" class="relative rounded-lg z-10 transform translate-y-4 ">
-                <div class="absolute inset-0 rounded-lg border-4 border-green-700 " style="height: 30rem;width: 22rem;">
+                <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png"
+                    style="--tw-translate-x:2rem; --tw-translate-y:2rem" alt="Farmers"
+                    class="relative rounded-lg z-10 transform">
+                <div class="absolute inset-0 rounded-lg border-4 border-green-700 " style="height: 32rem;width: 22rem;">
                 </div>
             </div>
             <div id="section-d-info" class="p-8" style="margin-left: 3rem;max-width: 35rem;">
@@ -297,17 +317,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="w-1/3">
-                <div class="map-container border-2 border-gray-300 rounded-lg shadow-lg overflow-hidden">
-                <<div id="map" class="w-full h-full"></div>
-            </div>
-            </div>
         </div>
         <div class="container mx-auto px-4 mt-8 border-t border-white pt-4 text-center">
             <p class="text-sm">Copyright. Makarem 2024</p>
         </div>
     </footer>
-    <script src="/home/medfata/Desktop/makarem_web_site/OpenLayers.js"></script>
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -315,56 +329,18 @@
         menuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        var map = new OpenLayers.Map("map");
-        map.addLayer(new OpenLayers.Layer.OSM());
-
-        // Example point data
-        var points = [
-            {lon: 9.5788, lat: 48.9773, description: "Point 1"},
-            {lon: 9.5888, lat: 48.9873, description: "Point 2"}
-        ];
-
-        // Function to add points to the map
-        function addPoints(points) {
-            var vectorLayer = new OpenLayers.Layer.Vector("Points");
-            var epsg4326 = new OpenLayers.Projection("EPSG:4326"); // WGS 1984
-            var projectTo = map.getProjectionObject(); // The map projection (Spherical Mercator)
-
-            points.forEach(function(point) {
-                var feature = new OpenLayers.Feature.Vector(
-                    new OpenLayers.Geometry.Point(point.lon, point.lat).transform(epsg4326, projectTo),
-                    {description: point.description},
-                    {externalGraphic: 'https://openlayers.org/en/v3.20.1/examples/data/icon.png', graphicHeight: 25, graphicWidth: 21, graphicXOffset: -12, graphicYOffset: -25}
-                );
-                vectorLayer.addFeatures(feature);
-            });
-
-            map.addLayer(vectorLayer);
-
-            // Add a select feature control
-            var selectControl = new OpenLayers.Control.SelectFeature(vectorLayer, {
-                onSelect: function(feature) {
-                    alert(feature.attributes.description);
+        document.getElementById('nos-produit-button').addEventListener('click', function () {
+            var dropdown = document.getElementById('nos-produit-menu');
+            dropdown.classList.toggle('hidden');
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                var dropdown = document.getElementById('nos-produit-menu');
+                if (!dropdown.classList.contains('hidden')) {
+                    dropdown.classList.add('hidden');
                 }
-            });
-            map.addControl(selectControl);
-            selectControl.activate();
-        }
-
-        addPoints(points);
-
-        // Create layer switcher widget in top right corner of map
-        var layerSwitcher = new OpenLayers.Control.LayerSwitcher({});
-        map.addControl(layerSwitcher);
-
-        // Set start center point and zoom    
-        var lonLat = new OpenLayers.LonLat(9.5788, 48.9773)
-            .transform(
-                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
-                map.getProjectionObject() // to Spherical Mercator Projection
-            );
-        var zoom = 11;
-        map.setCenter(lonLat, zoom);
+            }
+        });
     </script>
 </body>
 

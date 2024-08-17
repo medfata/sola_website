@@ -1,4 +1,8 @@
 @media (max-width: 775px) {
+    header{
+      margin-top:0px !important;
+      width: 100%
+    }
     #section-a{
       height: 40rem !important;
     }
@@ -52,5 +56,16 @@
       width: 20rem;
       margin-left: 0 !important;
       margin-top: 1.5rem
+    }
+    #section-c > div{
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    #section-c svg{
+      display: none;
+    }
+    #mobile-menu{
+      margin-top: 5.5rem;
     }
   }
