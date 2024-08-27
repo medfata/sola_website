@@ -68,4 +68,11 @@
     #mobile-menu{
       margin-top: 5.5rem;
     }
+    #contact-section{
+      margin-top: 5.5rem;
+      height: 100%;
+    }
+    #contact-section form{
+      border-radius: 0;
+    }
   }
