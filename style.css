@@ -76,3 +76,15 @@
       border-radius: 0;
     }
   }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+  }
+  @font-face {
+    font-family: 'UrbanRounded';
+    src: url('assets/UrbaneRounded-Heavy.ttf') format('truetype');
+}
+h1 {
+  font-family: 'UrbanRounded', sans-serif;
+}
