@@ -197,17 +197,39 @@
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            function validateForm() {
+                const email = document.querySelector('input[name="email"]').value;
+                const message = document.querySelector('textarea[name="message"]').value;
+
+                // Regular expression to validate email format
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                // Check if the email is valid and message is not empty
+                if (!emailPattern.test(email)) {
+                    alert("Veuillez entrer une adresse e-mail valide.");
+                    return false;
+                }
+
+                if (message.trim() === "") {
+                    alert("Le message ne peut pas être vide.");
+                    return false;
+                }
+
+                return true;
+            }
             // Function to handle form submission
             async function sendMessage() {
+                if (!validateForm()) {
+                    return;
+                }
                 // Get input values
                 const name = document.querySelector('input[name="name"]').value;
                 const email = document.querySelector('input[name="email"]').value;
-                const message = document.querySelector('textarea[name="message"]').value; // Assuming it's a textarea for messages
+                const message = document.querySelector('textarea[name="message"]').value;
 
                 // Create the payload for the POST request
                 const payload = {
-                    name: name,
-                    email: email,
+                    email_list: [email],
                     message: message,
                 };
 
