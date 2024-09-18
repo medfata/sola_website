@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Makarem - Galerie</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/sola_website/assets/logo.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body class="bg-gray-100  h-auto">
+    <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto
+    absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2" style="margin-top: 4rem;">
+
+        <div class="flex items-center">
+            <a href="/sola_website">
+                <img src="/sola_website/assets/logo.png" alt="Makarem Logo" class="h-10">
+            </a>
+        </div>
+        <nav class="hidden lg:flex space-x-8">
+            <div class="relative group">
+                <button id="nos-produit-button"
+                    class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                    NOS PRODUITS
+                    <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="nos-produit-menu" class="hidden absolute bg-white z-20 flex" style="top: 3.71rem;">
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/sola_website/assets/tomat_image.jpg" alt="Circular Image"
+                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">TOMATE</h2>
+                    </div>
+
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/sola_website/assets/tomat_image.jpg" alt="Circular Image"
+                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">TOMATE ALLONGÉE</h2>
+                    </div>
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/sola_website/assets/tomat_image.jpg" alt="Circular Image"
+                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">POIVRON ROUGE & VERT</h2>
+                    </div>
+                    <div class="p-4" style="width: 12rem;text-align: center;">
+                        <img src="/sola_website/assets/tomat_image.jpg" alt="Circular Image"
+                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2">PIMENT</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="relative group">
+                <button
+                    class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                    NOS ENGAGEMENTS
+                    <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
+                    <!-- Add dropdown items here -->
+                </div>
+            </div>
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS CERTIFICATS
+            </a>
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS SAVOIR FAIRE
+            </a>
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                CONTACT
+            </a>
+        </nav>
+        <button class="block lg:hidden text-green-700 focus:outline-none" id="menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+    </header>
+    <section id="galerie-section" class="container mx-auto flex justify-center" style="margin-top: 12rem;">
+        <div class="text-center py-4">
+            <h1 class="text-4xl font-bold text-gray-900">
+                Nous Galerie
+            </h1>
+            <p class="text-xl text-gray-500 mt-4">
+                Explorez nos infrastructures et processus de production
+            </p>
+        </div>        
+        <div class="grid grid-cols-1 gap-y-4 gap-x-6 p-4 sm:grid-cols-3">
+            <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Image 1" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
+            <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png" alt="Image 2" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
+            <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Image 3" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
+            <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png" alt="Image 4" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
+            <img src="/home/medfata/Desktop/makarem_web_site/assets/tomat_image.jpg" alt="Image 5" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
+            <img src="/home/medfata/Desktop/makarem_web_site/assets/section-c.png" alt="Image 6" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
+        </div> 
+    </section>
+    <footer class="bg-green-800 text-white py-8 mt-8" style="padding-top: 4rem;">
+        <div class="container mx-auto px-4 flex justify-between items-start space-x-8">
+            <div class="w-1/4">
+                <img src="/sola_website/assets/logo.png" alt="Makarem Logo" class="h-10">
+                <p class="mt-8 text-sm">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                </p>
+                <div class="flex mt-8 space-x-4">
+                    <a href="#"><img src="/sola_website/assets/facebook-icon.svg" alt="Facebook" class="w-4 h-4"></a>
+                    <a href="#"><img src="/sola_website/assets/instagram-icon.svg" alt="Instagram" class="w-4 h-4"></a>
+                    <a href="#"><img src="/sola_website/assets/youtube-icon.svg" alt="Youtube" class="w-4 h-4"></a>
+                    <a href="#"><img src="/sola_website/assets/linkdin-icon.svg" alt="Linkdin" class="w-4 h-4"></a>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <h2 class="text-lg font-bold">Nos Produits</h2>
+                <ul class="mt-8 text-sm">
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                    </li>
+                    <li class="flex items-center "><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                        allongée</li>
+                    <li class="flex items-center "><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Poivron
+                        rouge & vert</li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Piment
+                    </li>
+                </ul>
+            </div>
+            <div class="w-1/4">
+                <h2 class="text-lg font-bold">Contact</h2>
+                <ul class="mt-8 text-sm">
+                    <li class="flex items-center">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/sola_website/assets/phone-icon.svg" alt="phone" class="w-4 h-4">
+                        </span>+212 606 06 06 06
+                    </li>
+                    <li class="flex items-center mt-2">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/sola_website/assets/email-icon.svg" alt="email" class="w-4 h-4">
+                        </span>Contact@makarem.com
+                    </li>
+                    <li class="flex items-center mt-2">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/sola_website/assets/location-icon.svg" alt="location" class="w-4 h-4">
+                        </span>Garage N 2 SIS A DOUAR TADDART COMMUNE SIDI BIBI BIOUGRA
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 border-t border-white pt-4 text-center">
+            <p class="text-sm">Copyright. Makarem 2024</p>
+        </div>
+    </footer>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.getElementById('nos-produit-button').addEventListener('click', function () {
+            var dropdown = document.getElementById('nos-produit-menu');
+            dropdown.classList.toggle('hidden');
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                var dropdown = document.getElementById('nos-produit-menu');
+                if (!dropdown.classList.contains('hidden')) {
+                    dropdown.classList.add('hidden');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
