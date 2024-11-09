@@ -206,8 +206,6 @@
         });
     </script>
     <script type="module">
-        console.log("swal: ", Swal);
-
         document.addEventListener('DOMContentLoaded', function () {
             function validateForm() {
                 const email = document.querySelector('input[name="email"]').value;
@@ -218,12 +216,20 @@
 
                 // Check if the email is valid and message is not empty
                 if (!emailPattern.test(email)) {
-                    alert("Veuillez entrer une adresse e-mail valide.");
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Attention",
+                        text: "Veuillez entrer une adresse e-mail valide."
+                    });
                     return false;
                 }
 
                 if (message.trim() === "") {
-                    alert("Le message ne peut pas être vide.");
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Attention",
+                        text: "Le message ne peut pas être vide."
+                    });
                     return false;
                 }
 
