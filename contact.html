@@ -102,7 +102,7 @@
         </nav>
     </div>
     <section id="contact-section" class="container mx-auto flex justify-center" style="margin-top: 12rem;">
-        <form class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
+        <form class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl opacity-90 m-2 sm:m-0 sm:opacity-100">
             <h2 class="text-2xl font-bold mb-6 text-green-700">Contactez-nous</h2>
 
             <div class="mb-4">
@@ -183,6 +183,7 @@
             <p class="text-sm">Copyright. Makarem 2024</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -204,6 +205,8 @@
         });
     </script>
     <script>
+        const Swal = require('sweetalert2');
+
         document.addEventListener('DOMContentLoaded', function () {
             function validateForm() {
                 const email = document.querySelector('input[name="email"]').value;
@@ -250,16 +253,23 @@
                         },
                         body: JSON.stringify(payload),
                     });
-
                     // Check if the response is 200 or 201
                     if (response.status === 200 || response.status === 201) {
-                        alert('Email a été envoyé');
+                        Swal.fire({
+                            icon: "success",
+                            title: "Succès",
+                            text: "Email a été envoyé",
+                        });
                     } else {
                         throw new Error('Erreur au moment de l\'envoi du email');
                     }
                 } catch (error) {
                     // Handle any errors that occur during the fetch
-                    alert('Erreur au moment de l\'envoi du email');
+                    Swal.fire({
+                        icon: "error",
+                        title: "Erreur",
+                        text: "Erreur au moment de l'envoi du email",
+                    });
                 }
             }
 
