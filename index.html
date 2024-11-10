@@ -25,339 +25,360 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
-    <link rel="preload" href="/assets/logo.png" as="image">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <meta http-equiv="Cache-Control" content="max-age=31536000">
 </head>
 
 <body class="bg-gray-100 h-auto">
-    <main>
-        <nav role="navigation" aria-label="Menu principal">
-            <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto
-            absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2 z-50 opacity-80" style="margin-top: 4rem;">
+    <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto
+    absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2 z-50 opacity-80" style="margin-top: 4rem;">
 
-                <div class="flex items-center">
-                    <a href="/">
-                        <img src="/assets/logo.png" alt="Makarem Agri Logo" class="h-10 rounded">
-                    </a>
-                </div>
-                <nav class="hidden lg:flex space-x-8">
-                    <div class="relative group">
-                        <button id="nos-produit-button"
-                            class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                            NOS PRODUITS
-                            <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div id="nos-produit-menu" class="hidden absolute bg-white z-20 flex sm:rounded-lg sm:border-solid sm:border-1 border-sky-500" style="top: 3.80rem;">
-                            <div class="p-4 sm:rounded-l-lg" style="width: 12rem;text-align: center; background-color: #4d7c0f;">
-                                <img src="/assets/our_products_tomato.avif" alt="Tomates fraîches Makarem Agri - Production marocaine de qualité" class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
-                                <h2 class="text-base font-bold mb-2 text-white">TOMATE</h2>
-                            </div>
-
-                            <div class="p-4" style="width: 12rem;text-align: center; background-color: #65a30d;">
-                                <img src="/assets/our_products_elongated_tomate.jpg" alt="TOMATE ALLONGÉE"
-                                    class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
-                                <h2 class="text-base font-bold mb-2 text-white">TOMATE ALLONGÉE</h2>
-                            </div>
-                            <div class="p-4" style="width: 12rem;text-align: center; background-color: #84cc16;">
-                                <img src="/assets/our_products_green_red_pepper.avif" alt="POIVRON ROUGE & VERT"
-                                    class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
-                                <h2 class="text-base font-bold mb-2 text-white">POIVRON ROUGE & VERT</h2>
-                            </div>
-                            <div class="p-4 sm:rounded-r-lg" style="width: 12rem;text-align: center; background-color: #a3e635;">
-                                <img src="/assets/our_products_pepper.avif" alt="PIMENT"
-                                    class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
-                                <h2 class="text-base font-bold mb-2 text-white">PIMENT</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative group">
-                        <button
-                            class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                            NOS ENGAGEMENTS
-                            <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <!-- Dropdown menu -->
-                        <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
-                            <!-- Add dropdown items here -->
-                        </div>
-                    </div>
-                    <a href="#"
-                        class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                        NOS CERTIFICATS
-                    </a>
-                    <a href="/galerie.html"
-                        class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                        NOS GALERIE
-                    </a>
-                    <a href="/contact.html"
-                        class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
-                        CONTACT
-                    </a>
-                </nav>
-                <button class="block lg:hidden text-green-700 focus:outline-none" id="menu-button">
-                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <div class="flex items-center">
+            <a href="/">
+                <img src="/assets/logo.png" alt="Makarem Agri Logo" class="h-10 rounded">
+            </a>
+        </div>
+        <nav class="hidden lg:flex space-x-8">
+            <div class="relative group">
+                <button id="nos-produit-button"
+                    class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                    NOS PRODUITS
+                    <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                     </svg>
                 </button>
-
-            </header>
-            <div class="hidden lg:hidden" id="mobile-menu">
-                <nav class="bg-white shadow-lg">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS PRODUITS</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
-                    <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS Galerie</a>
-                    <a href="/contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
-                </nav>
-            </div>
-        </nav>
-
-        <section id="hero" aria-label="Introduction">
-            <!-- Video background -->
-            <video 
-                autoplay 
-                muted 
-                loop 
-                playsinline
-                class="absolute top-0 left-0 w-full h-full object-cover z-0"
-            >
-                <source src="/assets/barnd_vid.webm" type="video/mp4">
-                <!-- You can add more source elements for different video formats -->
-            </video>
-            
-            <!-- Content -->
-            <div class="absolute text-white z-20" style="width: 50rem;top: 40%; left: 10.6%;">
-                <h1 class="font-black text-7xl">PRODUCTEUR DE TOMATES FRAICHE</h1>
-                <h3 class="text-4xl mt-8 mb-8 font-normal">Société engagé et responsable</h3>
-                <button class="font-bold bg-green-700 text-white py-2 px-6 rounded">EN SAVOIR PLUS</button>
-            </div>
-        </section>
-
-        <section id="products" aria-label="Nos produits">
-            <div class="container mx-auto max-w-screen-xl" style="padding-top: 5rem; padding-bottom: 5rem;">
-                <div id="section-b-first-dev" class="flex justify-between py-10 mb-8">
-                    <div>
-                        <h3 class="text-green-700 font-semibold mb-4 text-2xl">CE QUE NOUS PRODUISONS</h3>
-                        <h2 class="text-3xl font-bold mb-4">ACTUELLEMENT NOUS PRODUISONS</h1>
-                    </div>
-                    <div style="width: 40rem;">
-                        <p class="text-gray-500 mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
-                        <button class="font-bold  bg-green-700 text-white py-2 px-6 rounded mt-4">EN SAVOIR PLUS</button>
-                    </div>
-                </div>
-                <div id="section-b-second-dev" class="flex justify-center gap-20">
-                    <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
-                        <img src="/assets/our_products_tomato.avif" alt="TOMATE"
-                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
-                        <h2 class="text-xl font-bold mb-2">TOMATE</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                            eirmod</p>
+                <div id="nos-produit-menu" class="hidden absolute bg-white z-20 flex sm:rounded-lg sm:border-solid sm:border-1 border-sky-500" style="top: 3.80rem;">
+                    <div class="p-4 sm:rounded-l-lg" style="width: 12rem;text-align: center; background-color: #4d7c0f;">
+                        <img src="/assets/our_products_tomato.avif" alt="Tomates fraîches Makarem Agri - Production marocaine de qualité" class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2 text-white">TOMATE</h2>
                     </div>
 
-                    <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
+                    <div class="p-4" style="width: 12rem;text-align: center; background-color: #65a30d;">
                         <img src="/assets/our_products_elongated_tomate.jpg" alt="TOMATE ALLONGÉE"
-                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
-                        <h2 class="text-xl font-bold mb-2">TOMATE ALLONGÉE</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                            eirmod</p>
+                            class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2 text-white">TOMATE ALLONGÉE</h2>
                     </div>
-                    <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
+                    <div class="p-4" style="width: 12rem;text-align: center; background-color: #84cc16;">
                         <img src="/assets/our_products_green_red_pepper.avif" alt="POIVRON ROUGE & VERT"
-                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
-                        <h2 class="text-xl font-bold mb-2">POIVRON ROUGE & VERT</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                            eirmod</p>
+                            class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2 text-white">POIVRON ROUGE & VERT</h2>
                     </div>
-                    <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
+                    <div class="p-4 sm:rounded-r-lg" style="width: 12rem;text-align: center; background-color: #a3e635;">
                         <img src="/assets/our_products_pepper.avif" alt="PIMENT"
-                            class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
-                        <h2 class="text-xl font-bold mb-2">PIMENT</h2>
-                        <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                            eirmod</p>
+                            class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2 text-white">PIMENT</h2>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <article id="about" aria-label="À propos">
-            <div class="flex justify-evenly items-center" style="width: 40rem;">
-                <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
-                    <circle cy="50" fill="white" cx="100" r="13"></circle>
-                    <rect height="200" fill="white" width="5" y="60" x="98"></rect>
-                </svg>
-                <h2 class="font-black text-4xl text-white mt-8" style="height: min-content;">NOS VALEURS</h1>
+            <div class="relative group">
+                <button
+                    class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                    NOS ENGAGEMENTS
+                    <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div class="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md py-1 z-10 hidden group-hover:block">
+                    <!-- Add dropdown items here -->
+                </div>
             </div>
-            <div class="flex justify-evenly items-center text-white p-6 pt-2 rounded-lg max-w-2xl">
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS CERTIFICATS
+            </a>
+            <a href="/galerie.html"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS GALERIE
+            </a>
+            <a href="/contact.html"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                CONTACT
+            </a>
+        </nav>
+        <button class="block lg:hidden text-green-700 focus:outline-none" id="menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+    </header>
+    <div class="hidden lg:hidden" id="mobile-menu">
+        <nav class="bg-white shadow-lg">
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS PRODUITS</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
+            <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS Galerie</a>
+            <a href="/contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
+        </nav>
+    </div>
+    <section id="section-a" class="w-full relative" style="height: 55rem;">
+        <!-- Video background -->
+        <video 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            class="absolute top-0 left-0 w-full h-full object-cover z-0"
+        >
+            <source src="/assets/barnd_vid.webm" type="video/mp4">
+            <!-- You can add more source elements for different video formats -->
+        </video>
+        
+        <!-- Content -->
+        <div class="absolute text-white z-20" style="width: 50rem;top: 40%; left: 10.6%;">
+            <h1 class="font-black text-7xl">PRODUCTEUR DE TOMATES FRAICHE</h1>
+            <h3 class="text-4xl mt-8 mb-8 font-normal">Société engagé et responsable</h3>
+            <button class="font-bold bg-green-700 text-white py-2 px-6 rounded">EN SAVOIR PLUS</button>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container mx-auto max-w-screen-xl" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <div id="section-b-first-dev" class="flex justify-between py-10 mb-8">
+                <div>
+                    <h3 class="text-green-700 font-semibold mb-4 text-2xl">CE QUE NOUS PRODUISONS</h3>
+                    <h1 class="text-3xl font-bold mb-4">ACTUELLEMENT NOUS PRODUISONS</h1>
+                </div>
+                <div style="width: 40rem;">
+                    <p class="text-gray-500 mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+                    <button class="font-bold  bg-green-700 text-white py-2 px-6 rounded mt-4">EN SAVOIR PLUS</button>
+                </div>
+            </div>
+            <div id="section-b-second-dev" class="flex justify-center gap-20">
+                <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
+                    <img src="/assets/our_products_tomato.avif" alt="TOMATE"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <h2 class="text-xl font-bold mb-2">TOMATE</h2>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
+                </div>
+
+                <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
+                    <img src="/assets/our_products_elongated_tomate.jpg" alt="TOMATE ALLONGÉE"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <h2 class="text-xl font-bold mb-2">TOMATE ALLONGÉE</h2>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
+                </div>
+                <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
+                    <img src="/assets/our_products_green_red_pepper.avif" alt="POIVRON ROUGE & VERT"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <h2 class="text-xl font-bold mb-2">POIVRON ROUGE & VERT</h2>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
+                </div>
+                <div class="flex flex-col text-center items-center justify-between bg-white rounded-lg border p-6 w-25">
+                    <img src="/assets/our_products_pepper.avif" alt="PIMENT"
+                        class="w-40 h-40 rounded-full object-cover mb-4 mx-auto">
+                    <h2 class="text-xl font-bold mb-2">PIMENT</h2>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-c" class="bg-green-700 flex flex-col items-center space-y-10">
+        <div class="flex justify-evenly items-center" style="width: 40rem;">
+            <svg width="200" height="250" xmlns="http://www.w3.org/2000/svg">
+                <circle cy="50" fill="white" cx="100" r="13"></circle>
+                <rect height="200" fill="white" width="5" y="60" x="98"></rect>
+            </svg>
+            <h1 class="font-black text-4xl text-white mt-8" style="height: min-content;">NOS VALEURS</h1>
+        </div>
+        <div class="flex justify-evenly items-center text-white p-6 pt-2 rounded-lg max-w-2xl">
+            <svg class="text-yellow-400" fill="currentColor" height="150px" width="300px" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 502 502"
+                xml:space="preserve">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g>
+                        <g>
+                            <g>
+                                <path
+                                    d="M230.523,78.722c-35.583-0.342-69.221,13.48-94.756,38.802C110.239,142.84,96.18,176.363,96.18,211.92 c0,34.708,13.278,67.567,37.387,92.524c24,24.844,37.216,57.409,37.216,91.697v13.156v57.125c0,5.523,4.477,10,10,10h12.756 C197.871,491.185,211.53,502,227.676,502s29.805-10.815,34.138-25.578h16.166c5.523,0,10-4.477,10-10v-57.125v-13.15 c0-34.627,12.99-66.961,36.576-91.044c24.522-25.04,38.027-58.133,38.027-93.185c0-35.38-13.723-68.697-38.64-93.812 C299.041,93.006,265.864,79.02,230.523,78.722z M227.676,482c-4.787,0-9.076-2.17-11.936-5.578h23.872 C236.752,479.83,232.463,482,227.676,482z M267.98,456.422h-14.726h-51.156h-11.315v-37.125h77.197V456.422z M310.267,291.109 c-27.269,27.844-42.287,65.148-42.287,105.039v3.15h-77.197v-3.156c0-39.5-15.211-77-42.832-105.593 c-20.488-21.208-31.771-49.133-31.771-78.629c0-30.183,11.958-58.663,33.67-80.194c21.72-21.538,50.338-33.226,80.505-33.005 c61.882,0.521,112.228,51.301,112.228,113.197C342.583,241.707,331.106,269.83,310.267,291.109z">
+                                </path>
+                                <path
+                                    d="M229.381,55.584c5.523,0,10-4.477,10-10V10c0-5.523-4.477-10-10-10c-5.523,0-10,4.477-10,10v35.584 C219.381,51.107,223.858,55.584,229.381,55.584z">
+                                </path>
+                                <path
+                                    d="M85.246,29.896c1.957,2.693,5.006,4.123,8.099,4.123c2.038,0,4.095-0.621,5.87-1.91c4.468-3.247,5.458-9.5,2.212-13.968 l-7.108-9.783C91.073,3.89,84.82,2.9,80.351,6.146c-4.468,3.247-5.458,9.5-2.212,13.968L85.246,29.896z">
+                                </path>
+                                <path
+                                    d="M124.729,84.239c1.957,2.693,5.006,4.123,8.099,4.123c2.038,0,4.095-0.621,5.87-1.91c4.468-3.246,5.458-9.5,2.212-13.968 l-19.113-26.308c-3.246-4.468-9.499-5.459-13.968-2.212c-4.468,3.246-5.458,9.5-2.212,13.968L124.729,84.239z">
+                                </path>
+                                <path
+                                    d="M37.031,160.15l33.843,10.996c1.027,0.333,2.068,0.492,3.092,0.492c4.215,0,8.136-2.687,9.509-6.913 c1.707-5.253-1.168-10.894-6.42-12.601l-33.843-10.996c-5.251-1.705-10.894,1.168-12.601,6.42 C28.904,152.802,31.778,158.443,37.031,160.15z">
+                                </path>
+                                <path
+                                    d="M84.808,260.51c-1.707-5.253-7.346-8.126-12.601-6.42l-33.843,10.996c-5.252,1.707-8.127,7.348-6.42,12.601 c1.373,4.226,5.293,6.913,9.509,6.913c1.024,0,2.065-0.159,3.092-0.492l33.843-10.996 C83.64,271.404,86.514,265.763,84.808,260.51z">
+                                </path>
+                                <path
+                                    d="M102.626,391.668c-4.467-3.246-10.721-2.255-13.968,2.212l-8.903,12.253c-3.246,4.468-2.256,10.722,2.212,13.968 c1.775,1.29,3.832,1.91,5.87,1.91c3.092,0,6.142-1.43,8.099-4.123l8.903-12.253C108.085,401.168,107.095,394.915,102.626,391.668 z">
+                                </path>
+                                <path
+                                    d="M134.544,347.736c-4.468-3.246-10.722-2.255-13.968,2.212l-8.845,12.175c-3.246,4.468-2.255,10.722,2.212,13.968 c1.775,1.29,3.832,1.91,5.87,1.91c3.092,0,6.142-1.43,8.099-4.123l8.845-12.175C140.003,357.236,139.012,350.982,134.544,347.736 z">
+                                </path>
+                                <path
+                                    d="M338.347,336.895c-3.246-4.468-9.499-5.459-13.968-2.212c-4.468,3.247-5.458,9.5-2.212,13.968l20.916,28.789 c1.957,2.693,5.006,4.123,8.099,4.123c2.038,0,4.095-0.621,5.87-1.91c4.468-3.247,5.458-9.5,2.212-13.968L338.347,336.895z">
+                                </path>
+                                <path
+                                    d="M426.045,260.984l-33.843-10.997c-5.252-1.705-10.894,1.168-12.601,6.42c-1.707,5.252,1.168,10.894,6.42,12.601 l33.843,10.997c1.027,0.333,2.068,0.492,3.092,0.492c4.215,0,8.136-2.687,9.509-6.913 C434.172,268.333,431.298,262.691,426.045,260.984z">
+                                </path>
+                                <path
+                                    d="M471.39,130.367c-1.706-5.252-7.347-8.127-12.601-6.42l-14.678,4.769c-5.252,1.707-8.127,7.348-6.42,12.601 c1.373,4.226,5.293,6.913,9.509,6.913c1.024,0,2.065-0.159,3.092-0.492l14.678-4.769 C470.222,141.261,473.096,135.62,471.39,130.367z">
+                                </path>
+                                <path
+                                    d="M387.777,167.536c1.024,0,2.065-0.159,3.092-0.492l25.994-8.446c5.252-1.707,8.127-7.348,6.42-12.601 c-1.707-5.252-7.347-8.127-12.601-6.42l-25.994,8.446c-5.252,1.707-8.127,7.348-6.42,12.601 C379.642,164.849,383.562,167.536,387.777,167.536z">
+                                </path>
+                                <path
+                                    d="M320.89,83.916c1.775,1.29,3.832,1.91,5.87,1.91c3.092,0,6.142-1.43,8.099-4.123l20.916-28.789 c3.246-4.468,2.255-10.722-2.212-13.968c-4.469-3.246-10.722-2.255-13.968,2.212l-20.916,28.789 C315.431,74.416,316.422,80.669,320.89,83.916z">
+                                </path>
+                                <path
+                                    d="M288.349,135.549c-11.289-8.76-24.609-14.981-38.521-17.992c-5.395-1.169-10.721,2.26-11.889,7.659 c-1.168,5.398,2.261,10.721,7.659,11.889c11.007,2.382,21.55,7.308,30.491,14.245c1.823,1.415,3.981,2.1,6.124,2.1 c2.984,0,5.937-1.33,7.907-3.87C293.505,145.217,292.712,138.935,288.349,135.549z">
+                                </path>
+                                <path
+                                    d="M202.914,119.066c-41.096,11.729-69.797,49.799-69.797,92.579c0,5.523,4.477,10,10,10s10-4.477,10-10 c0-33.895,22.735-64.056,55.287-73.346c5.311-1.516,8.387-7.05,6.872-12.361C213.758,120.628,208.224,117.55,202.914,119.066z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div class="ml-4">
+                <h2 class="sm:text-2xl text-xl font-bold">L'INNOVATION</h2>
+                <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+        </div>
+        <div class="flex justify-end items-center text-white p-6 pt-2 rounded-lg">
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <rect height="100" fill="white" width="5" x="40" y="5"></rect>
+            </svg>
+            <div class="flex justify-evenly items-center max-w-2xl">
                 <svg class="text-yellow-400" fill="currentColor" height="150px" width="300px" version="1.1" id="Layer_1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 502 502"
                     xml:space="preserve">
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                        <g>
-                            <g>
-                                <g>
-                                    <path
-                                        d="M230.523,78.722c-35.583-0.342-69.221,13.48-94.756,38.802C110.239,142.84,96.18,176.363,96.18,211.92 c0,34.708,13.278,67.567,37.387,92.524c24,24.844,37.216,57.409,37.216,91.697v13.156v57.125c0,5.523,4.477,10,10,10h12.756 C197.871,491.185,211.53,502,227.676,502s29.805-10.815,34.138-25.578h16.166c5.523,0,10-4.477,10-10v-57.125v-13.15 c0-34.627,12.99-66.961,36.576-91.044c24.522-25.04,38.027-58.133,38.027-93.185c0-35.38-13.723-68.697-38.64-93.812 C299.041,93.006,265.864,79.02,230.523,78.722z M227.676,482c-4.787,0-9.076-2.17-11.936-5.578h23.872 C236.752,479.83,232.463,482,227.676,482z M267.98,456.422h-14.726h-51.156h-11.315v-37.125h77.197V456.422z M310.267,291.109 c-27.269,27.844-42.287,65.148-42.287,105.039v3.15h-77.197v-3.156c0-39.5-15.211-77-42.832-105.593 c-20.488-21.208-31.771-49.133-31.771-78.629c0-30.183,11.958-58.663,33.67-80.194c21.72-21.538,50.338-33.226,80.505-33.005 c61.882,0.521,112.228,51.301,112.228,113.197C342.583,241.707,331.106,269.83,310.267,291.109z">
-                                    </path>
-                                    <path
-                                        d="M229.381,55.584c5.523,0,10-4.477,10-10V10c0-5.523-4.477-10-10-10c-5.523,0-10,4.477-10,10v35.584 C219.381,51.107,223.858,55.584,229.381,55.584z">
-                                    </path>
-                                    <path
-                                        d="M85.246,29.896c1.957,2.693,5.006,4.123,8.099,4.123c2.038,0,4.095-0.621,5.87-1.91c4.468-3.247,5.458-9.5,2.212-13.968 l-7.108-9.783C91.073,3.89,84.82,2.9,80.351,6.146c-4.468,3.247-5.458,9.5-2.212,13.968L85.246,29.896z">
-                                    </path>
-                                    <path
-                                        d="M124.729,84.239c1.957,2.693,5.006,4.123,8.099,4.123c2.038,0,4.095-0.621,5.87-1.91c4.468-3.246,5.458-9.5,2.212-13.968 l-19.113-26.308c-3.246-4.468-9.499-5.459-13.968-2.212c-4.468,3.246-5.458,9.5-2.212,13.968L124.729,84.239z">
-                                    </path>
-                                    <path
-                                        d="M37.031,160.15l33.843,10.996c1.027,0.333,2.068,0.492,3.092,0.492c4.215,0,8.136-2.687,9.509-6.913 c1.707-5.253-1.168-10.894-6.42-12.601l-33.843-10.996c-5.251-1.705-10.894,1.168-12.601,6.42 C28.904,152.802,31.778,158.443,37.031,160.15z">
-                                    </path>
-                                    <path
-                                        d="M84.808,260.51c-1.707-5.253-7.346-8.126-12.601-6.42l-33.843,10.996c-5.252,1.707-8.127,7.348-6.42,12.601 c1.373,4.226,5.293,6.913,9.509,6.913c1.024,0,2.065-0.159,3.092-0.492l33.843-10.996 C83.64,271.404,86.514,265.763,84.808,260.51z">
-                                    </path>
-                                    <path
-                                        d="M102.626,391.668c-4.467-3.246-10.721-2.255-13.968,2.212l-8.903,12.253c-3.246,4.468-2.256,10.722,2.212,13.968 c1.775,1.29,3.832,1.91,5.87,1.91c3.092,0,6.142-1.43,8.099-4.123l8.903-12.253C108.085,401.168,107.095,394.915,102.626,391.668 z">
-                                    </path>
-                                    <path
-                                        d="M134.544,347.736c-4.468-3.246-10.722-2.255-13.968,2.212l-8.845,12.175c-3.246,4.468-2.255,10.722,2.212,13.968 c1.775,1.29,3.832,1.91,5.87,1.91c3.092,0,6.142-1.43,8.099-4.123l8.845-12.175C140.003,357.236,139.012,350.982,134.544,347.736 z">
-                                    </path>
-                                    <path
-                                        d="M338.347,336.895c-3.246-4.468-9.499-5.459-13.968-2.212c-4.468,3.247-5.458,9.5-2.212,13.968l20.916,28.789 c1.957,2.693,5.006,4.123,8.099,4.123c2.038,0,4.095-0.621,5.87-1.91c4.468-3.247,5.458-9.5,2.212-13.968L338.347,336.895z">
-                                    </path>
-                                    <path
-                                        d="M426.045,260.984l-33.843-10.997c-5.252-1.705-10.894,1.168-12.601,6.42c-1.707,5.252,1.168,10.894,6.42,12.601 l33.843,10.997c1.027,0.333,2.068,0.492,3.092,0.492c4.215,0,8.136-2.687,9.509-6.913 C434.172,268.333,431.298,262.691,426.045,260.984z">
-                                    </path>
-                                    <path
-                                        d="M471.39,130.367c-1.706-5.252-7.347-8.127-12.601-6.42l-14.678,4.769c-5.252,1.707-8.127,7.348-6.42,12.601 c1.373,4.226,5.293,6.913,9.509,6.913c1.024,0,2.065-0.159,3.092-0.492l14.678-4.769 C470.222,141.261,473.096,135.62,471.39,130.367z">
-                                    </path>
-                                    <path
-                                        d="M387.777,167.536c1.024,0,2.065-0.159,3.092-0.492l25.994-8.446c5.252-1.707,8.127-7.348,6.42-12.601 c-1.707-5.252-7.347-8.127-12.601-6.42l-25.994,8.446c-5.252,1.707-8.127,7.348-6.42,12.601 C379.642,164.849,383.562,167.536,387.777,167.536z">
-                                    </path>
-                                    <path
-                                        d="M320.89,83.916c1.775,1.29,3.832,1.91,5.87,1.91c3.092,0,6.142-1.43,8.099-4.123l20.916-28.789 c3.246-4.468,2.255-10.722-2.212-13.968c-4.469-3.246-10.722-2.255-13.968,2.212l-20.916,28.789 C315.431,74.416,316.422,80.669,320.89,83.916z">
-                                    </path>
-                                    <path
-                                        d="M288.349,135.549c-11.289-8.76-24.609-14.981-38.521-17.992c-5.395-1.169-10.721,2.26-11.889,7.659 c-1.168,5.398,2.261,10.721,7.659,11.889c11.007,2.382,21.55,7.308,30.491,14.245c1.823,1.415,3.981,2.1,6.124,2.1 c2.984,0,5.937-1.33,7.907-3.87C293.505,145.217,292.712,138.935,288.349,135.549z">
-                                    </path>
-                                    <path
-                                        d="M202.914,119.066c-41.096,11.729-69.797,49.799-69.797,92.579c0,5.523,4.477,10,10,10s10-4.477,10-10 c0-33.895,22.735-64.056,55.287-73.346c5.311-1.516,8.387-7.05,6.872-12.361C213.758,120.628,208.224,117.55,202.914,119.066z">
-                                    </path>
-                                </g>
+                        <g id="XMLID_92_" transform="translate(86, 86)">
+                            <path id="XMLID_93_"
+                                d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300 c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z">
+                            </path>
+                            <path id="XMLID_104_"
+                                d="M205.306,205.305c-22.226,22.224-58.386,22.225-80.611,0.001c-5.857-5.858-15.355-5.858-21.213,0 c-5.858,5.858-5.858,15.355,0,21.213c16.963,16.963,39.236,25.441,61.519,25.441c22.276,0,44.56-8.482,61.519-25.441 c5.858-5.857,5.858-15.355,0-21.213C220.661,199.447,211.163,199.448,205.306,205.305z">
+                            </path>
+                            <path id="XMLID_105_"
+                                d="M115.14,147.14c3.73-3.72,5.86-8.88,5.86-14.14c0-5.26-2.13-10.42-5.86-14.14 c-3.72-3.72-8.88-5.86-14.14-5.86c-5.271,0-10.42,2.14-14.141,5.86C83.13,122.58,81,127.74,81,133c0,5.26,2.13,10.42,5.859,14.14 C90.58,150.87,95.74,153,101,153S111.42,150.87,115.14,147.14z">
+                            </path>
+                            <path id="XMLID_106_"
+                                d="M229,113c-5.26,0-10.42,2.14-14.141,5.86C211.14,122.58,209,127.73,209,133c0,5.27,2.14,10.42,5.859,14.14 C218.58,150.87,223.74,153,229,153s10.42-2.13,14.14-5.86c3.72-3.72,5.86-8.87,5.86-14.14c0-5.26-2.141-10.42-5.86-14.14 C239.42,115.14,234.26,113,229,113z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <div class="ml-4">
+                    <h2 class="sm:text-2xl text-xl font-bold">L'INNOVATION</h2>
+                    <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-start items-center text-white p-6 pt-2 rounded-lg">
+            <div class="flex justify-evenly items-center max-w-2xl">
+                <svg height="100px" width="200px" class="text-yellow-400" fill="currentColor" viewBox="0 0 32 32"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <title>search</title>
+                        <desc>Created with Sketch Beta.</desc>
+                        <defs> </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                            sketch:type="MSPage">
+                            <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-256.000000, -1139.000000)"
+                                fill="currentColor">
+                                <path
+                                    d="M269.46,1163.45 C263.17,1163.45 258.071,1158.44 258.071,1152.25 C258.071,1146.06 263.17,1141.04 269.46,1141.04 C275.75,1141.04 280.85,1146.06 280.85,1152.25 C280.85,1158.44 275.75,1163.45 269.46,1163.45 L269.46,1163.45 Z M287.688,1169.25 L279.429,1161.12 C281.591,1158.77 282.92,1155.67 282.92,1152.25 C282.92,1144.93 276.894,1139 269.46,1139 C262.026,1139 256,1144.93 256,1152.25 C256,1159.56 262.026,1165.49 269.46,1165.49 C272.672,1165.49 275.618,1164.38 277.932,1162.53 L286.224,1170.69 C286.629,1171.09 287.284,1171.09 287.688,1170.69 C288.093,1170.3 288.093,1169.65 287.688,1169.25 L287.688,1169.25 Z"
+                                    id="search" sketch:type="MSShapeGroup"> </path>
                             </g>
                         </g>
                     </g>
                 </svg>
                 <div class="ml-4">
                     <h2 class="sm:text-2xl text-xl font-bold">L'INNOVATION</h2>
-                    <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
                 </div>
             </div>
-            <div class="flex justify-end items-center text-white p-6 pt-2 rounded-lg">
-                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                    <rect height="100" fill="white" width="5" x="40" y="5"></rect>
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <rect height="100" fill="white" width="5" x="40" y="5"></rect>
+            </svg>
+        </div>
+        <div class="flex justify-end items-center text-white p-6 pt-2 rounded-lg" style="margin-bottom: 2rem;">
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <rect height="100" fill="white" width="5" x="40" y="5"></rect>
+            </svg>
+            <div class="flex justify-evenly items-center max-w-2xl">
+                <svg class="text-yellow-400" width="200px" height="150px" viewBox="0 0 24 24" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M20.22 9.55C19.79 9.04 19.17 8.75 18.5 8.75H14.47V6C14.47 4.48 13.24 3.25 11.64 3.25C10.94 3.25 10.31 3.67 10.03 4.32L7.49 10.25H5.62C4.31 10.25 3.25 11.31 3.25 12.62V18.39C3.25 19.69 4.32 20.75 5.62 20.75H17.18C18.27 20.75 19.2 19.97 19.39 18.89L20.71 11.39C20.82 10.73 20.64 10.06 20.21 9.55H20.22ZM5.62 19.25C5.14 19.25 4.75 18.86 4.75 18.39V12.62C4.75 12.14 5.14 11.75 5.62 11.75H7.23V19.25H5.62ZM17.92 18.63C17.86 18.99 17.55 19.25 17.18 19.25H8.74V11.15L11.41 4.9C11.45 4.81 11.54 4.74 11.73 4.74C12.42 4.74 12.97 5.3 12.97 5.99V10.24H18.5C18.73 10.24 18.93 10.33 19.07 10.5C19.21 10.67 19.27 10.89 19.23 11.12L17.91 18.62L17.92 18.63Z"
+                            fill="currentcolor"></path>
+                    </g>
                 </svg>
-                <div class="flex justify-evenly items-center max-w-2xl">
-                    <svg class="text-yellow-400" fill="currentColor" height="150px" width="300px" version="1.1" id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 502 502"
-                        xml:space="preserve">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <g id="XMLID_92_" transform="translate(86, 86)">
-                                <path id="XMLID_93_"
-                                    d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M165,300 c-74.439,0-135-60.561-135-135S90.561,30,165,30s135,60.561,135,135S239.439,300,165,300z">
-                                </path>
-                                <path id="XMLID_104_"
-                                    d="M205.306,205.305c-22.226,22.224-58.386,22.225-80.611,0.001c-5.857-5.858-15.355-5.858-21.213,0 c-5.858,5.858-5.858,15.355,0,21.213c16.963,16.963,39.236,25.441,61.519,25.441c22.276,0,44.56-8.482,61.519-25.441 c5.858-5.857,5.858-15.355,0-21.213C220.661,199.447,211.163,199.448,205.306,205.305z">
-                                </path>
-                                <path id="XMLID_105_"
-                                    d="M115.14,147.14c3.73-3.72,5.86-8.88,5.86-14.14c0-5.26-2.13-10.42-5.86-14.14 c-3.72-3.72-8.88-5.86-14.14-5.86c-5.271,0-10.42,2.14-14.141,5.86C83.13,122.58,81,127.74,81,133c0,5.26,2.13,10.42,5.859,14.14 C90.58,150.87,95.74,153,101,153S111.42,150.87,115.14,147.14z">
-                                </path>
-                                <path id="XMLID_106_"
-                                    d="M229,113c-5.26,0-10.42,2.14-14.141,5.86C211.14,122.58,209,127.73,209,133c0,5.27,2.14,10.42,5.859,14.14 C218.58,150.87,223.74,153,229,153s10.42-2.13,14.14-5.86c3.72-3.72,5.86-8.87,5.86-14.14c0-5.26-2.141-10.42-5.86-14.14 C239.42,115.14,234.26,113,229,113z">
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="ml-4">
-                        <h2 class="sm:text-2xl text-xl font-bold">L'INNOVATION</h2>
-                        <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
+                <div class="ml-4">
+                    <h2 class="sm:text-2xl text-xl font-bold">L'INNOVATION</h2>
+                    <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="flex items-center justify-center min-h-screen bg-gray-100 p-8">
+            <div id="section-d-image" class="relative">
+                <img src="/assets/section-c.png" style="--tw-translate-x:2rem; --tw-translate-y:2rem"
+                    alt="Farmers" class="relative rounded-lg z-10 transform">
+                <div class="absolute inset-0 rounded-lg border-4 border-green-700 " style="height: 32rem;width: 22rem;">
+                </div>
+            </div>
+            <div id="section-d-info" class="p-8" style="margin-left: 3rem;max-width: 35rem;">
+                <div class="">
+                    <h2 class="text-green-700 text-xl font-bold uppercase">Ce que nous produisons</h2>
+                    <h1 class="text-4xl font-bold mt-2">Cultiver un avenir plus fort</h1>
+                    <p class="text-gray-500 mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod</p>
+                </div>
+                <div class="flex justify-center mt-8 space-x-10">
+                    <div>
+                        <span class="text-green-700 text-6xl font-bold">35+</span>
+                        <p class="text-gray-700 mt-2">Lorem ipsum dolor sit amet, consetetur</p>
+                    </div>
+                    <div>
+                        <span class="text-green-700 text-6xl font-bold">99%</span>
+                        <p class="text-gray-700 mt-2">Lorem ipsum dolor sit amet, consetetur</p>
                     </div>
                 </div>
-            </div>
-            <div class="flex justify-start items-center text-white p-6 pt-2 rounded-lg">
-                <div class="flex justify-evenly items-center max-w-2xl">
-                    <svg height="100px" width="200px" class="text-yellow-400" fill="currentColor" viewBox="0 0 32 32"
-                        version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <title>search</title>
-                            <desc>Created with Sketch Beta.</desc>
-                            <defs> </defs>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
-                                sketch:type="MSPage">
-                                <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-256.000000, -1139.000000)"
-                                    fill="currentColor">
-                                    <path
-                                        d="M269.46,1163.45 C263.17,1163.45 258.071,1158.44 258.071,1152.25 C258.071,1146.06 263.17,1141.04 269.46,1141.04 C275.75,1141.04 280.85,1146.06 280.85,1152.25 C280.85,1158.44 275.75,1163.45 269.46,1163.45 L269.46,1163.45 Z M287.688,1169.25 L279.429,1161.12 C281.591,1158.77 282.92,1155.67 282.92,1152.25 C282.92,1144.93 276.894,1139 269.46,1139 C262.026,1139 256,1144.93 256,1152.25 C256,1159.56 262.026,1165.49 269.46,1165.49 C272.672,1165.49 275.618,1164.38 277.932,1162.53 L286.224,1170.69 C286.629,1171.09 287.284,1171.09 287.688,1170.69 C288.093,1170.3 288.093,1169.65 287.688,1169.25 L287.688,1169.25 Z"
-                                        id="search" sketch:type="MSShapeGroup"> </path>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <div class="ml-4">
-                        <h2 class="sm:text-2xl text-xl font-bold">L'INNOVATION</h2>
-                        <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                    </div>
-                </div>
-                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                    <rect height="100" fill="white" width="5" x="40" y="5"></rect>
-                </svg>
-            </div>
-            <div class="flex justify-end items-center text-white p-6 pt-2 rounded-lg" style="margin-bottom: 2rem;">
-                <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                    <rect height="100" fill="white" width="5" x="40" y="5"></rect>
-                </svg>
-                <div class="flex justify-evenly items-center max-w-2xl">
-                    <svg class="text-yellow-400" width="200px" height="150px" viewBox="0 0 24 24" fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M20.22 9.55C19.79 9.04 19.17 8.75 18.5 8.75H14.47V6C14.47 4.48 13.24 3.25 11.64 3.25C10.94 3.25 10.31 3.67 10.03 4.32L7.49 10.25H5.62C4.31 10.25 3.25 11.31 3.25 12.62V18.39C3.25 19.69 4.32 20.75 5.62 20.75H17.18C18.27 20.75 19.2 19.97 19.39 18.89L20.71 11.39C20.82 10.73 20.64 10.06 20.21 9.55H20.22ZM5.62 19.25C5.14 19.25 4.75 18.86 4.75 18.39V12.62C4.75 12.14 5.14 11.75 5.62 11.75H7.23V19.25H5.62ZM17.92 18.63C17.86 18.99 17.55 19.25 17.18 19.25H8.74V11.15L11.41 4.9C11.45 4.81 11.54 4.74 11.73 4.74C12.42 4.74 12.97 5.3 12.97 5.99V10.24H18.5C18.73 10.24 18.93 10.33 19.07 10.5C19.21 10.67 19.27 10.89 19.23 11.12L17.91 18.62L17.92 18.63Z"
-                                fill="currentcolor"></path>
-                        </g>
-                    </svg>
-                    <div class="ml-4">
-                        <h2 class="sm:text-2xl text-xl font-bold">L'INNOVATION</h2>
-                        <p class="mt-2 sm:text-xl text-sm" >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                        </p>
-                    </div>
+                <div class="flex justify-start mt-8">
+                    <a href="#" class="bg-green-700 text-white px-6 py-2 rounded-lg">En savoir plus</a>
                 </div>
             </div>
-        </article>
-    </main>
+        </div>
 
-    <footer role="contentinfo">
+    </section>
+    <footer class="bg-green-800 text-white py-8 mt-8" style="padding-top: 4rem;">
         <div class="container mx-auto px-4 flex justify-between items-start space-x-8">
             <div class="w-1/4">
                 <img src="/assets/logo.png" alt="Makarem Agri Logo" class="h-10 rounded">
@@ -410,7 +431,6 @@
             <p class="text-sm">Copyright. Makarem 2024</p>
         </div>
     </footer>
-
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -449,19 +469,6 @@
         "@type": "ContactPoint",
         "telephone": "+212-606-06-06-06",
         "contactType": "customer service"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Tomates Fraîches Makarem",
-      "image": "/assets/our_products_tomato.avif",
-      "description": "Tomates fraîches de qualité supérieure cultivées au Maroc",
-      "brand": {
-        "@type": "Brand",
-        "name": "Makarem Agri"
       }
     }
     </script>
