@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+<!-- Copy the entire head section from qui-sommes-nous.html -->
 <head>
+    <!-- ... same head content ... -->
+    <title>Nos Chiffres | Société Agricole Makarem</title>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Société Agricole Makarem - Nos Galerie</title>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -18,7 +19,7 @@
     </style>
 </head>
 
-<body class="bg-gray-100  h-auto">
+<body class="bg-gray-100 h-auto">
     <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto
     absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2" style="margin-top: 4rem;">
 
@@ -83,39 +84,130 @@
     </header>
     <div class="hidden lg:hidden" id="mobile-menu">
         <nav class="bg-white shadow-lg">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE ALLONGÉE</a>
+            <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE ALLONGÉE</a>
+            </div>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
             <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS GALERIE</a>
             <a href="/contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
+            <a href="/qui-sommes-nous.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">QUI
+                SOMMES-NOUS?</a>
         </nav>
     </div>
-    <section id="galerie-section" class="container mx-auto flex flex-col justify-center" style="margin-top: 12rem;">
-        <div class="text-center py-4">
-            <h1 class="text-4xl font-bold text-gray-900">
-                Nos Galerie
-            </h1>
-            <p class="text-xl text-gray-500 mt-4">
-                Explorez nos infrastructures et processus de production
-            </p>
-        </div>        
-        <div class="grid grid-cols-1 gap-y-4 gap-x-6 p-4 sm:grid-cols-3 m-auto">
-            <img src="/assets/tomat_image.jpg" alt="Image 1" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/section-c.png" alt="Image 2" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/tomat_image.jpg" alt="Image 3" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/section-c.png" alt="Image 4" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/tomat_image.jpg" alt="Image 5" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/section-c.png" alt="Image 6" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-        </div> 
+
+    <section class="container mx-auto px-4 py-16 mt-20">
+        <div class="max-w-6xl mx-auto p-8 mt-8">
+            <h1 class="text-3xl font-bold text-green-700 mb-6">Nos Chiffres</h1>
+            
+            <!-- Key Statistics Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white rounded-lg p-8 text-center shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl font-bold text-green-700 mb-4">35+</div>
+                    <div class="text-gray-600 font-medium">Années d'Expérience</div>
+                </div>
+                <div class="bg-white rounded-lg p-8 text-center shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl font-bold text-green-700 mb-4">500+</div>
+                    <div class="text-gray-600 font-medium">Employés</div>
+                </div>
+                <div class="bg-white rounded-lg p-8 text-center shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <div class="text-5xl font-bold text-green-700 mb-4">20+</div>
+                    <div class="text-gray-600 font-medium">Pays Desservis</div>
+                </div>
+            </div>
+
+            <!-- Production Statistics -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">Production Annuelle</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full">
+                        <thead>
+                            <tr class="bg-green-50">
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-green-700">Produit</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-green-700">Volume (Tonnes)</th>
+                                <th class="px-6 py-4 text-left text-sm font-semibold text-green-700">Surface Cultivée (Ha)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">Tomate Ronde</td>
+                                <td class="px-6 py-4">15,000</td>
+                                <td class="px-6 py-4">120</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-6 py-4">Tomate Allongée</td>
+                                <td class="px-6 py-4">8,000</td>
+                                <td class="px-6 py-4">65</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Export Markets -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-16">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">Marchés d'Exportation</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="border rounded-lg p-4 hover:border-green-500 transition-colors duration-300">
+                        <h3 class="font-bold mb-2">Europe</h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>France</li>
+                            <li>Allemagne</li>
+                            <li>Pays-Bas</li>
+                            <li>Espagne</li>
+                        </ul>
+                    </div>
+                    <div class="border rounded-lg p-4 hover:border-green-500 transition-colors duration-300">
+                        <h3 class="font-bold mb-2">Moyen-Orient</h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Émirats Arabes Unis</li>
+                            <li>Arabie Saoudite</li>
+                            <li>Qatar</li>
+                        </ul>
+                    </div>
+                    <div class="border rounded-lg p-4 hover:border-green-500 transition-colors duration-300">
+                        <h3 class="font-bold mb-2">Afrique</h3>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Mauritanie</li>
+                            <li>Sénégal</li>
+                            <li>Côte d'Ivoire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-green-700 mb-6">Certifications et Standards</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center p-4 border rounded-lg hover:border-green-500 transition-colors duration-300">
+                        <div class="text-4xl font-bold text-green-700 mb-2">ISO</div>
+                        <div class="text-gray-600 text-center">22000:2018</div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 border rounded-lg hover:border-green-500 transition-colors duration-300">
+                        <div class="text-4xl font-bold text-green-700 mb-2">BRC</div>
+                        <div class="text-gray-600 text-center">Grade A+</div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 border rounded-lg hover:border-green-500 transition-colors duration-300">
+                        <div class="text-4xl font-bold text-green-700 mb-2">IFS</div>
+                        <div class="text-gray-600 text-center">Higher Level</div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 border rounded-lg hover:border-green-500 transition-colors duration-300">
+                        <div class="text-4xl font-bold text-green-700 mb-2">GLOBAL<br>G.A.P</div>
+                        <div class="text-gray-600 text-center">Certified</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="bg-green-800 text-white py-8 mt-8" style="padding-top: 4rem;">
         <div class="container mx-auto px-4 flex justify-between items-start space-x-8">
             <div class="w-1/4">
-                <img src="/assets/logo.png" alt="Makarem Logo" class="h-10">
+                <img src="/assets/logo.png" alt="Société Agricole Makarem Logo" class="h-10 rounded">
                 <p class="mt-8 text-sm">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna
+                    Située à Agadir, Société Agricole Makarem est une entreprise agricole moderne spécialisée dans la
+                    production et l'exportation de tomates et légumes frais de haute qualité.
                 </p>
                 <div class="flex mt-8 space-x-4">
                     <a href="#"><img src="/assets/facebook-icon.svg" alt="Facebook" class="w-4 h-4"></a>
@@ -127,8 +219,10 @@
             <div class="w-1/4">
                 <h2 class="text-lg font-bold">Nos Produits</h2>
                 <ul class="mt-8 text-sm">
-                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate</li>
-                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate allongée</li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                    </li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                        allongée</li>
                 </ul>
             </div>
             <div class="w-1/4">
@@ -177,5 +271,4 @@
         });
     </script>
 </body>
-
 </html>
