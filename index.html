@@ -431,68 +431,55 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Société Agricole Makarem",
-      "description": "Producteur et exportateur de tomates et légumes frais au Maroc",
-      "image": "/assets/logo.png",
-      "url": "https://makarem.com",
+      "url": "https://makarem-agri.com",
+      "logo": "https://makarem-agri.com/assets/logo.png",
+      "description": "Leader dans la production et l'exportation de tomates fraîches au Maroc. Producteur de légumes certifiés, culture sous serre à Agadir.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Agadir",
         "addressRegion": "Souss-Massa",
         "addressCountry": "MA"
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+212-606-06-06-06",
-        "contactType": "customer service",
-        "availableLanguage": ["fr", "ar", "en"]
-      },
       "sameAs": [
         "https://www.facebook.com/makaremAgri",
-        "https://www.linkedin.com/company/makarem-agri"
+        "https://www.instagram.com/makaremAgri",
+        "https://www.linkedin.com/company/makarem"
       ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Produits Agricoles",
-        "itemListElement": [
+      "mainEntityOfPage": {
+        "@type": "WebSite",
+        "name": "Société Agricole Makarem",
+        "url": "https://makarem-agri.com",
+        "about": {
+          "@type": "Thing",
+          "name": "Agriculture et Export de Tomates"
+        },
+        "subjectOf": [
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Tomates Grappes",
-              "description": "Tomates grappes fraîches cultivées sous serre"
-            }
+            "@type": "WebPage",
+            "name": "Qui Sommes-nous?",
+            "url": "https://makarem-agri.com/qui-sommes-nous.html",
+            "description": "Découvrez l'histoire et les valeurs de Société Agricole Makarem, leader dans la production de tomates au Maroc depuis plus de 35 ans."
           },
           {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Product",
-              "name": "Tomates Cerises",
-              "description": "Tomates cerises premium pour l'export"
-            }
+            "@type": "WebPage",
+            "name": "Nos Chiffres",
+            "url": "https://makarem-agri.com/nos-chiffres.html",
+            "description": "Explorez nos statistiques de production, notre présence internationale et nos certifications dans le domaine agricole."
+          },
+          {
+            "@type": "WebPage",
+            "name": "Galerie",
+            "url": "https://makarem-agri.com/galerie.html",
+            "description": "Visitez notre galerie photo pour découvrir nos installations modernes et notre production de tomates de qualité."
+          },
+          {
+            "@type": "WebPage",
+            "name": "Contact",
+            "url": "https://makarem-agri.com/contact.html",
+            "description": "Contactez-nous pour toute demande concernant nos produits ou services d'exportation de tomates."
           }
         ]
       }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [{
-        "@type": "Question",
-        "name": "O sont situées vos serres de production ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nos serres sont situées dans la région d'Agadir, Maroc, idéale pour la culture de tomates."
-        }
-      }, {
-        "@type": "Question",
-        "name": "Quelles certifications possédez-vous ?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nous sommes certifiés GlobalGAP, garantissant des pratiques agricoles durables et sûres."
-        }
-      }]
     }
     </script>
 </body>
