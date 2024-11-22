@@ -41,7 +41,8 @@
 
 <body class="bg-gray-100 h-auto">
     <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto
-    absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2" style="margin-top: 4rem; z-index: 1000">
+    absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2"
+        style="margin-top: 4rem; z-index: 1000">
 
         <div class="flex items-center">
             <a href="/">
@@ -102,13 +103,19 @@
         </button>
 
     </header>
-    <div class="hidden lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out" style="z-index: 1000;" id="mobile-menu">
+    <div class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+        style="z-index: 1000;" id="mobile-menu">
         <nav class="h-full flex flex-col">
             <div class="flex-1 overflow-y-auto">
-                <a href="/qui-sommes-nous.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-t">QUI SOMMES-NOUS?</a>
-                <a href="/nos-chiffres.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS CHIFFRES</a>
-                <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS GALERIE</a>
-                <a href="/contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">CONTACT</a>
+                <a href="/qui-sommes-nous.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-t">QUI
+                    SOMMES-NOUS?</a>
+                <a href="/nos-chiffres.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS CHIFFRES</a>
+                <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS
+                    GALERIE</a>
+                <a href="/contact.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">CONTACT</a>
             </div>
         </nav>
     </div>
@@ -409,19 +416,17 @@
         const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
         menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            // Toggle the transform class instead of hidden
             mobileMenu.classList.toggle('-translate-x-full');
             mobileMenuOverlay.classList.toggle('hidden');
             document.body.classList.toggle('overflow-hidden');
         });
 
         mobileMenuOverlay.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
             mobileMenu.classList.add('-translate-x-full');
             mobileMenuOverlay.classList.add('hidden');
             document.body.classList.remove('overflow-hidden');
         });
-
         document.getElementById('nos-produit-button').addEventListener('click', function () {
             var dropdown = document.getElementById('nos-produit-menu');
             dropdown.classList.toggle('hidden');
