@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- ... same head content ... -->
+    <title>Qui Sommes-nous? | Société Agricole Makarem</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/assets/./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/./favicon.svg" />
+    <link rel="shortcut icon" href="/assets/./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/./apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/./site.webmanifest" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body class="bg-gray-100 h-auto">
+    <header class="bg-white container flex justify-between items-center sm:rounded-lg sm:border-solid sm:border-2 border-sky-500 px-6 py-6 sm:mx-auto
+    absolute z-[100] left-1/2 top-11 sm:top-11 transform -translate-x-1/2 -translate-y-1/2" style="margin-top: 4rem;">
+
+        <div class="flex items-center">
+            <a href="/">
+                <img src="/assets/logo.png" alt="Société Agricole Makarem Logo" class="h-10 rounded">
+            </a>
+        </div>
+        <nav class="hidden lg:flex space-x-8">
+            <div class="relative group">
+                <button id="nos-produit-button"
+                    class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                    NOS PRODUITS
+                    <svg class="w-5 h-5 ml-1 text-green-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="nos-produit-menu"
+                    class="hidden absolute bg-white z-20 flex sm:rounded-lg sm:border-solid sm:border-1 border-sky-500"
+                    style="top: 3.80rem;">
+                    <div class="p-4 sm:rounded-l-lg"
+                        style="width: 12rem;text-align: center; background-color: #4d7c0f;">
+                        <img src="/assets/our_products_tomato.avif"
+                            alt="Tomates fraîches Société Agricole Makarem - Production marocaine de qualité"
+                            class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2 text-white">TOMATE</h2>
+                    </div>
+
+                    <div class="p-4 sm:rounded-r-lg"
+                        style="width: 12rem;text-align: center; background-color: #65a30d;">
+                        <img src="/assets/our_products_elongated_tomate.jpg" alt="TOMATE ALLONGÉE"
+                            class="w-28 h-28 rounded-full object-cover mb-4 mx-auto">
+                        <h2 class="text-base font-bold mb-2 text-white">TOMATE ALLONGÉE</h2>
+                    </div>
+                </div>
+            </div>
+            <a href="/qui-sommes-nous.html"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                QUI SOMMES-NOUS?
+            </a>
+            <a href="#"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS CERTIFICATS
+            </a>
+            <a href="/galerie.html"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                NOS GALERIE
+            </a>
+            <a href="/contact.html"
+                class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm leading-5 font-medium text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 transition duration-150 ease-in-out">
+                CONTACT
+            </a>
+        </nav>
+        <button class="block lg:hidden text-green-700 focus:outline-none" id="menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+    </header>
+    <div class="hidden lg:hidden" id="mobile-menu">
+        <nav class="bg-white shadow-lg">
+            <div class="py-2">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE ALLONGÉE</a>
+            </div>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
+            <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS GALERIE</a>
+            <a href="/contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
+            <a href="/qui-sommes-nous.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">QUI
+                SOMMES-NOUS?</a>
+        </nav>
+    </div>
+    <section class="container mx-auto px-4 py-16 mt-20">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+            <h1 class="text-3xl font-bold text-green-700 mb-6">Qui Sommes-nous?</h1>
+            
+            <div class="prose prose-lg">
+                <p class="mb-4">
+                    Société Agricole Makarem, fondée il y a plus de 35 ans, est une entreprise leader dans la production et l'exportation de tomates et légumes frais de haute qualité au Maroc.
+                </p>
+
+                <p class="mb-4">
+                    Située dans la région d'Agadir, notre entreprise s'étend sur plusieurs hectares de serres modernes équipées des dernières technologies agricoles. Notre emplacement stratégique nous permet de bénéficier d'un climat idéal pour la culture maraîchère tout au long de l'année.
+                </p>
+
+                <h2 class="text-xl font-bold text-green-700 mt-6 mb-4">Notre Mission</h2>
+                <p class="mb-4">
+                    Notre mission est de fournir des produits agricoles de première qualité tout en respectant les normes internationales les plus strictes en matière de sécurité alimentaire et de développement durable.
+                </p>
+
+                <h2 class="text-xl font-bold text-green-700 mt-6 mb-4">Nos Valeurs</h2>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Excellence dans la qualité de nos produits</li>
+                    <li>Innovation continue dans nos méthodes de production</li>
+                    <li>Respect de l'environnement</li>
+                    <li>Engagement envers nos clients et partenaires</li>
+                </ul>
+
+                <h2 class="text-xl font-bold text-green-700 mt-6 mb-4">Notre Expertise</h2>
+                <p class="mb-4">
+                    Avec plus de trois décennies d'expérience, nous avons développé une expertise unique dans la culture de tomates et légumes sous serre. Notre équipe hautement qualifiée assure un suivi rigoureux de la production, de la plantation à la récolte.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-green-800 text-white py-8 mt-8" style="padding-top: 4rem;">
+        <div class="container mx-auto px-4 flex justify-between items-start space-x-8">
+            <div class="w-1/4">
+                <img src="/assets/logo.png" alt="Société Agricole Makarem Logo" class="h-10 rounded">
+                <p class="mt-8 text-sm">
+                    Située à Agadir, Société Agricole Makarem est une entreprise agricole moderne spécialisée dans la
+                    production et l'exportation de tomates et légumes frais de haute qualité.
+                </p>
+                <div class="flex mt-8 space-x-4">
+                    <a href="#"><img src="/assets/facebook-icon.svg" alt="Facebook" class="w-4 h-4"></a>
+                    <a href="#"><img src="/assets/instagram-icon.svg" alt="Instagram" class="w-4 h-4"></a>
+                    <a href="#"><img src="/assets/youtube-icon.svg" alt="Youtube" class="w-4 h-4"></a>
+                    <a href="#"><img src="/assets/linkdin-icon.svg" alt="Linkdin" class="w-4 h-4"></a>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <h2 class="text-lg font-bold">Nos Produits</h2>
+                <ul class="mt-8 text-sm">
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                    </li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                        allongée</li>
+                </ul>
+            </div>
+            <div class="w-1/4">
+                <h2 class="text-lg font-bold">Contact</h2>
+                <ul class="mt-8 text-sm">
+                    <li class="flex items-center">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/assets/phone-icon.svg" alt="phone" class="w-4 h-4">
+                        </span>+212 606 06 06 06
+                    </li>
+                    <li class="flex items-center mt-2">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/assets/email-icon.svg" alt="email" class="w-4 h-4">
+                        </span>Contact@makarem.com
+                    </li>
+                    <li class="flex items-center mt-2">
+                        <span class="mr-2" style="min-width: 1.5rem;">
+                            <img src="/assets/location-icon.svg" alt="location" class="w-4 h-4">
+                        </span>Garage N 2 SIS A DOUAR TADDART COMMUNE SIDI BIBI BIOUGRA
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 border-t border-white pt-4 text-center">
+            <p class="text-sm">Copyright. Makarem 2024</p>
+        </div>
+    </footer>
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.getElementById('nos-produit-button').addEventListener('click', function () {
+            var dropdown = document.getElementById('nos-produit-menu');
+            dropdown.classList.toggle('hidden');
+        });
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                var dropdown = document.getElementById('nos-produit-menu');
+                if (!dropdown.classList.contains('hidden')) {
+                    dropdown.classList.add('hidden');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
