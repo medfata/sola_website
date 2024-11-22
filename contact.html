@@ -10,22 +10,25 @@
     <link rel="stylesheet" href="style.css">
     <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css " rel="stylesheet">
     <link rel="icon" type="image/png" href="/assets/./favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/assets/./favicon.svg" />
-<link rel="shortcut icon" href="/assets/./favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/assets/./favicon.svg" />
+    <link rel="shortcut icon" href="/assets/./favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/./apple-touch-icon.png" />
     <link rel="manifest" href="/assets/./site.webmanifest" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
     <style>
-        .swal2-confirm{
+        .swal2-confirm {
             background-color: #16a34a !important;
         }
     </style>
-    <meta name="description" content="Contactez Société Agricole Makarem pour toute demande concernant nos produits ou services. Leader dans la production et l'export de tomates au Maroc.">
-    <meta name="keywords" content="contact makarem agri, société agricole agadir, contact export tomates, producteur légumes maroc, contact agriculture maroc">
+    <meta name="description"
+        content="Contactez Société Agricole Makarem pour toute demande concernant nos produits ou services. Leader dans la production et l'export de tomates au Maroc.">
+    <meta name="keywords"
+        content="contact makarem agri, société agricole agadir, contact export tomates, producteur légumes maroc, contact agriculture maroc">
     <meta property="og:title" content="Contactez-nous | Société Agricole Makarem">
-    <meta property="og:description" content="Prenez contact avec Société Agricole Makarem. Notre équipe est à votre disposition pour répondre à toutes vos questions.">
+    <meta property="og:description"
+        content="Prenez contact avec Société Agricole Makarem. Notre équipe est à votre disposition pour répondre à toutes vos questions.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://makarem-agri.com/contact.html">
     <meta property="og:image" content="https://makarem-agri.com/assets/logo.png">
@@ -95,14 +98,20 @@
         </button>
 
     </header>
-    <div class="hidden lg:hidden" id="mobile-menu">
-        <nav class="bg-white shadow-lg">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE ALLONGÉE</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
-            <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS GALERIE</a>
-            <a href="/contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
+    <div class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+        style="z-index: 1000;" id="mobile-menu">
+        <nav class="h-full flex flex-col">
+            <div class="flex-1 overflow-y-auto">
+                <a href="/qui-sommes-nous.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-t">QUI
+                    SOMMES-NOUS?</a>
+                <a href="/nos-chiffres.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS CHIFFRES</a>
+                <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS
+                    GALERIE</a>
+                <a href="/contact.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">CONTACT</a>
+            </div>
         </nav>
     </div>
     <section id="contact-section" class="container mx-auto flex justify-center" style="margin-top: 12rem;">
@@ -152,8 +161,10 @@
             <div class="w-1/4">
                 <h2 class="text-lg font-bold">Nos Produits</h2>
                 <ul class="mt-8 text-sm">
-                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate</li>
-                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate allongée</li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                    </li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                        allongée</li>
                 </ul>
             </div>
             <div class="w-1/4">
@@ -185,21 +196,19 @@
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
         menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            // Toggle the transform class instead of hidden
+            mobileMenu.classList.toggle('-translate-x-full');
+            mobileMenuOverlay.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
         });
-        document.getElementById('nos-produit-button').addEventListener('click', function () {
-            var dropdown = document.getElementById('nos-produit-menu');
-            dropdown.classList.toggle('hidden');
-        });
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
-                var dropdown = document.getElementById('nos-produit-menu');
-                if (!dropdown.classList.contains('hidden')) {
-                    dropdown.classList.add('hidden');
-                }
-            }
+
+        mobileMenuOverlay.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
         });
     </script>
     <script type="module">

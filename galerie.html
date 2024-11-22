@@ -16,10 +16,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     </style>
-    <meta name="description" content="Explorez la galerie photo de Société Agricole Makarem. Découvrez nos installations modernes, nos serres de production et nos tomates de qualité supérieure à Agadir.">
-    <meta name="keywords" content="galerie agricole maroc, photos production tomates, serres agadir, installations agricoles modernes, production tomates maroc">
+    <meta name="description"
+        content="Explorez la galerie photo de Société Agricole Makarem. Découvrez nos installations modernes, nos serres de production et nos tomates de qualité supérieure à Agadir.">
+    <meta name="keywords"
+        content="galerie agricole maroc, photos production tomates, serres agadir, installations agricoles modernes, production tomates maroc">
     <meta property="og:title" content="Notre Galerie | Société Agricole Makarem">
-    <meta property="og:description" content="Visitez notre galerie photo pour découvrir nos installations modernes et notre production de tomates de qualité à Agadir.">
+    <meta property="og:description"
+        content="Visitez notre galerie photo pour découvrir nos installations modernes et notre production de tomates de qualité à Agadir.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://makarem-agri.com/galerie.html">
     <meta property="og:image" content="https://makarem-agri.com/assets/logo.png">
@@ -88,14 +91,20 @@
         </button>
 
     </header>
-    <div class="hidden lg:hidden" id="mobile-menu">
-        <nav class="bg-white shadow-lg">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">TOMATE ALLONGÉE</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS ENGAGEMENTS</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS CERTIFICATS</a>
-            <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">NOS GALERIE</a>
-            <a href="/contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200">CONTACT</a>
+    <div class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out lg:hidden"
+        style="z-index: 1000;" id="mobile-menu">
+        <nav class="h-full flex flex-col">
+            <div class="flex-1 overflow-y-auto">
+                <a href="/qui-sommes-nous.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b border-t">QUI
+                    SOMMES-NOUS?</a>
+                <a href="/nos-chiffres.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS CHIFFRES</a>
+                <a href="/galerie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">NOS
+                    GALERIE</a>
+                <a href="/contact.html"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 border-b">CONTACT</a>
+            </div>
         </nav>
     </div>
     <section id="galerie-section" class="container mx-auto flex flex-col justify-center" style="margin-top: 12rem;">
@@ -106,15 +115,21 @@
             <p class="text-xl text-gray-500 mt-4">
                 Explorez nos infrastructures et processus de production
             </p>
-        </div>        
+        </div>
         <div class="grid grid-cols-1 gap-y-4 gap-x-6 p-4 sm:grid-cols-3 m-auto">
-            <img src="/assets/tomat_image.jpg" alt="Image 1" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/section-c.png" alt="Image 2" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/tomat_image.jpg" alt="Image 3" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/section-c.png" alt="Image 4" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/tomat_image.jpg" alt="Image 5" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-            <img src="/assets/section-c.png" alt="Image 6" class="w-full rounded-lg" style="height: 35rem; width: 28rem">
-        </div> 
+            <img src="/assets/tomat_image.jpg" alt="Image 1" class="w-full rounded-lg"
+                style="height: 35rem; width: 28rem">
+            <img src="/assets/section-c.png" alt="Image 2" class="w-full rounded-lg"
+                style="height: 35rem; width: 28rem">
+            <img src="/assets/tomat_image.jpg" alt="Image 3" class="w-full rounded-lg"
+                style="height: 35rem; width: 28rem">
+            <img src="/assets/section-c.png" alt="Image 4" class="w-full rounded-lg"
+                style="height: 35rem; width: 28rem">
+            <img src="/assets/tomat_image.jpg" alt="Image 5" class="w-full rounded-lg"
+                style="height: 35rem; width: 28rem">
+            <img src="/assets/section-c.png" alt="Image 6" class="w-full rounded-lg"
+                style="height: 35rem; width: 28rem">
+        </div>
     </section>
     <footer class="bg-green-800 text-white py-8 mt-8" style="padding-top: 4rem;">
         <div class="container mx-auto px-4 flex justify-between items-start space-x-8">
@@ -134,8 +149,10 @@
             <div class="w-1/4">
                 <h2 class="text-lg font-bold">Nos Produits</h2>
                 <ul class="mt-8 text-sm">
-                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate</li>
-                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate allongée</li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                    </li>
+                    <li class="flex items-center"><span class="mr-2 text-3xl" style="color: #f8e45c;">•</span>Tomate
+                        allongée</li>
                 </ul>
             </div>
             <div class="w-1/4">
@@ -166,21 +183,19 @@
     <script>
         const menuButton = document.getElementById('menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
         menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            // Toggle the transform class instead of hidden
+            mobileMenu.classList.toggle('-translate-x-full');
+            mobileMenuOverlay.classList.toggle('hidden');
+            document.body.classList.toggle('overflow-hidden');
         });
-        document.getElementById('nos-produit-button').addEventListener('click', function () {
-            var dropdown = document.getElementById('nos-produit-menu');
-            dropdown.classList.toggle('hidden');
-        });
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
-                var dropdown = document.getElementById('nos-produit-menu');
-                if (!dropdown.classList.contains('hidden')) {
-                    dropdown.classList.add('hidden');
-                }
-            }
+
+        mobileMenuOverlay.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+            mobileMenuOverlay.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
         });
     </script>
     <script type="application/ld+json">
