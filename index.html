@@ -123,6 +123,16 @@
     </div>
     <section id="section-a" class="w-full  bg-cover bg-no-repeat bg-center"
     style="background-image: url('/assets/tomat_image.jpg'); height: 55rem;">
+        <!-- Add a low res placeholder -->
+        <img 
+            src="/assets/tomat_image_lower.jpg" 
+            data-src="/assets/tomat_image.jpg"
+            alt="Tomates fraîches des serres de Société Agricole Makarem - Production maraîchère d'Agadir" 
+            class="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            onload="this.style.opacity='1'"
+            style="opacity: 0; transition: opacity 0.5s;"
+        >
         
         <!-- Content -->
         <div class="absolute text-white" style="width: 50rem;top: 40%; left: 10.6%;">
